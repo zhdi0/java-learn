@@ -1,3 +1,6 @@
+外部化配置
+https://docs.spring.io/spring-boot/docs/2.1.11.RELEASE/reference/html/boot-features-external-config.html
+
 17种属性配置方式，优先级由高到低，前面存在键值会忽略后面的配置，可以理解为短路现象：
     1、Devtools全局配置
     2、测试环境@TestPropertySource注解

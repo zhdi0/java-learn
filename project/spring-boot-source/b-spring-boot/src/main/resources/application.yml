@@ -1,2 +1,5 @@
 property:
   key: properties文件属性比yml属性优先级高
+
+my:
+  a: mya
