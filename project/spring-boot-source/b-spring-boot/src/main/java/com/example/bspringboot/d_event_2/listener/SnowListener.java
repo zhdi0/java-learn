@@ -9,7 +9,7 @@ public class SnowListener implements WeatherListener<WeatherEvent> {
     @Override
     public void onWeatherEvent(WeatherEvent event) {
         if (event instanceof SnowEvent){
-            System.out.println("    监听到 "+event.getWeather());
+            System.out.println("####SnowListener监听到 "+event.getWeather());
         }
     }
 }

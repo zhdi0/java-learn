@@ -17,6 +17,16 @@ public class MyController {
     private DemoService demoService;
 
 
+    @RequestMapping("/test/{id}")
+    @ResponseBody
+    public String test(@PathVariable(value = "id") Long id) {
+        if (id==1){
+            throw new RuntimeException("异常");
+        }
+        return "123";
+    }
+
+
     @RequestMapping("/hello/{id}")
     @ResponseBody
     public String hello(@PathVariable(value = "id") Long id) {

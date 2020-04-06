@@ -10,7 +10,7 @@ public class RainListener implements WeatherListener<WeatherEvent> {
     @Override
     public void onWeatherEvent(WeatherEvent event) {
         if (event instanceof RainEvent){
-            System.out.println("    监听到 "+event.getWeather());
+            System.out.println("####RainListener监听到 "+event.getWeather());
         }
     }
 }

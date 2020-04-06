@@ -1,4 +1,4 @@
-package com.example.bspringboot.d_event_2;
+package com.example.bspringboot.d_event_2.webrunlistener;
 
 import com.example.bspringboot.d_event_2.event.RainEvent;
 import com.example.bspringboot.d_event_2.event.SnowEvent;
@@ -11,8 +11,8 @@ public class WeatherRunListener {
 
     /**
      * 新建事件推送者，配合spring自动注入，推送事件就非常简单了，推送代码
-     *         weatherRunListener.rain();
-     *         weatherRunListener.snow();
+     *         weatherRunListenerList.rain();
+     *         weatherRunListenerList.snow();
      */
     @Autowired
     private WeatherEventMulticaster eventMulticaster;
